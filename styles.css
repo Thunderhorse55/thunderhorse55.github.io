@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/** HEADER **/
+
+.header {
+    background-color: #F2F2F2;
+}
+
+.header-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item a {
+    margin-left: 50px;
+}
+
+
+.hero {
+    background-image: url('./resources/assets/healthcare.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.hero-container {
+    text-align: center;
+}
+
+.hero-container .btn:first-child {
+    margin-right: 50px;
+}
+
+.hero-card {
+    width: 400px;
+    top: 30px;
+}
+
+.card {
+    background-color: white;
+    max-width: 65%;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 1em 1.5em;
+    background-color: #F205CB;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #eb48d0;
+}
+
+.team-card {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.team-member-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.footer {
+    background-color: #A61205;
+    color: white;
+    height: 300px;
+}
+
+.footer-container {
+    max-width: 65%;
+    margin: 0 auto;
+}
