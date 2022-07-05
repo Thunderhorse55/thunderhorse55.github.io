@@ -52,10 +52,6 @@ ul {
     text-align: center;
 }
 
-/* .hero-container .btn:first-child {
-    margin-right: 50px;
-} */
-
 .hero-card {
     width: 400px;
     max-width: 65%;
@@ -71,7 +67,7 @@ ul {
 
 .card {
     background-color: white;
-    max-width: 65%;
+    max-width: 80%;
     padding: 1em;
     border-radius: 10px;
     margin: 0 auto;
@@ -83,7 +79,7 @@ ul {
     border: none;
     border-radius: 8px;
     padding: 1em 1.5em;
-    background-color: #F205CB;
+    background-color: #d401b1;
     color: white;
 }
 
@@ -114,31 +110,49 @@ ul {
 .footer {
     background-color: #A61205;
     color: white;
-    height: 300px;
+    /* height: 300px; */
 }
 
-.footer-container {
-    max-width: 65%;
+.footer-grid-container {
+    max-width: 80%;
     margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-information {
+    display: flex;
+    gap: 3rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-media-icons {
+    margin-bottom: 1rem;
 }
 
 .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 830px){
-    .team-member-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 865px) {
     .nav .desktop {
         display: none;
     }
 
     .mobile {
         display: block;
+    }
+
+    .team-member-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -148,5 +162,12 @@ ul {
         gap: 1rem;
         align-items: center;
         justify-content: center;
+        max-width: 65%;
+    }
+
+    .footer-grid-container {
+        grid-template-columns: 1fr;
+        gap: 10rem;
+        max-width: 80%;
     }
 }
