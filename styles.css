@@ -38,7 +38,16 @@ ul {
 
 .list-item a {
     margin-left: 50px;
+    color:#eb48d0;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
+
+.list-item a:hover {
+    color:#bb4ea9;
+    text-decoration: underline;
+}
+
 
 
 .hero {
@@ -142,7 +151,7 @@ ul {
     display: none;
 }
 
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 985px) {
     .nav .desktop {
         display: none;
     }
